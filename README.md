@@ -13,8 +13,6 @@ Neighboring blocks of free memory seperated by metadata tags are coalesced to fo
 **3. Free Lists:**
 
 Instead of traversing across all blocks of memory, we can greatly optimize finding available storage by creating a linked list that contains only free blocks of memory. Without free lists, attempting to allocate memory on a highly occupied heap would be substantially slower.
-
--------------
 ## Testing:
 
 This implementation of Malloc is tested by sideloading it into programs that designed specifically for stress testing alongside actual programs like ``gif.c``.

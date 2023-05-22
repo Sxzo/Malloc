@@ -1,1 +1,18 @@
-# Malloc
+# A Basic Implementation of libc's Malloc, Calloc, and Realloc
+
+## Basic Allocator Design:
+
+**1. Block Splitting:**
+
+Blocks of memory on the heap are split upon allocation to leave free space for future allocations. If the open chunk of space has a byte size <= the size of a metadata tag, its disregarded.
+
+**2. Memory Coalescing:**
+
+Neighboring blocks of free memory seperated by metadata tags are coalesced to form a combined larger block. This optimization not only frees the space of the uneeded metadata tag, but prevents memory fragmentation after numerous allocations.
+
+**3. Free Lists:**
+
+Instead of traversing across all blocks of memory, we can greatly optimize finding available storage by creating a linked list that contains only free blocks of memory. Without free lists, attempting to allocate memory on a highly occupied heap would be substantially slower.
+
+
+

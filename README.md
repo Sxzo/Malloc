@@ -19,7 +19,7 @@ This implementation of Malloc is tested by sideloading it into programs that are
 
 -----
 
-This project was completed for CS340 (Systems) during spring of 2023. It allows insight into the way that Malloc works and the way it's implemented by libc in the backend. Alongside this, this project provides an invaluable understanding of the true importance of linked lists in systems. 
+This project was completed for CS340 (Systems) during spring of 2023. It allows insight into the way that Malloc works and the way it's implemented by GNU C. Alongside this, the project provides an invaluable understanding of the importance of linked lists in systems. 
 
 
 

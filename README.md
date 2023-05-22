@@ -17,6 +17,8 @@ Instead of traversing across all blocks of memory, we can greatly optimize findi
 
 This implementation of Malloc is tested by sideloading it into programs that are designed specifically for stress testing alongside actual programs like ``gif.c``.
 
+-----
+
 This project was completed for CS340 (Systems) during spring of 2023. It allows insight into the way that Malloc works and the way it's implemented by libc in the backend. Alongside this, this project provides an invaluable understanding of the true importance of linked lists in systems. 
 
 
